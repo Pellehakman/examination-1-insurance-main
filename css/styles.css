@@ -328,21 +328,27 @@ a {
 
 .just{
     background-color: var(--bg-yellow);
+    position: relative;
+    align-items: flex-start;
 }
 
 .just img{
-    transform: translateY(53px);
-    scale: 2.9;
+    transform: scale(0.4);
+    position: absolute;
+    top: -280px;
 }
 
 
 .old{
     background-color: var(--bg-red);
+    position: relative;
+    align-items: flex-start;
 }
 
 .old img{
-    transform: translateY(54px);
-    scale: 2.4;
+    transform: scale(0.5);
+    position: absolute;
+    top: -123px;
 }
 
 
