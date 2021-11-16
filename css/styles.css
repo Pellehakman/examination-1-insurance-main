@@ -316,11 +316,14 @@ a {
 
 .children{
     background-color: var(--bg-blue);
+    position: relative;
+    align-items: flex-start;
 }
 
 .children img{
-    transform: translateY(15px);
-    scale: 1.08;
+    transform: scale(0.5);
+    position: absolute;
+    top: -90px;
 }
 
 .just{
