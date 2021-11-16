@@ -10,13 +10,13 @@
     --bg-dark-grey: #777574;
 
     --fs-s: 11px;
-    --fs-nav:12px;
+    --fs-nav: 12px;
     --fs-p: 14px;
     --fs-title: 45px;
 
-    --fw-s:700;
-    --fw-nav:600;
-    --fw-p:500;
+    --fw-s: 700;
+    --fw-nav: 600;
+    --fw-p: 500;
     --fw-title: 900;
 
     --ff-fira: 'Fira Sans', sans-serif;
@@ -419,3 +419,141 @@ a {
 }
 
 /* ----------------------------- END FOOTER SECTION------------------------ */
+
+
+/* ----------------------------- START CONTACT PAGE------------------------- */
+
+.contact-wrapper {
+    max-width: 1000px;
+    width: 100%;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 300px 70px auto;
+    grid-template-areas: 
+    'c-hero c-hero c-hero c-hero c-hero c-hero'
+    'navigation navigation navigation navigation navigation navigation'
+    'c-main c-main c-main c-main c-main c-main'
+    'D-footer D-footer D-footer D-footer D-footer D-footer'
+    'c-footer c-footer c-footer c-footer c-footer c-footer'
+    ;
+}
+
+/* -------------------------------START HERO SECTION-------------------------- */
+
+.contact-hero {
+    grid-area: c-hero;
+    background-color: var(--bg-blue);
+    position: relative;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.contact-hero h1 {
+    align-self: center;
+    font-weight: var(--fw-title);
+    font-family: var(--ff-frank);
+    font-size: var(--fs-title);
+}
+
+.contact-hero figure {
+    position: absolute;
+    right: 4rem;
+    height: 90%;
+}
+
+.contact-hero figure img {
+height: 100%;
+}
+
+/* ---------------------------------END HERO SECTION--------------------------- */
+
+/* --------------------------------START MAIN SECTION--------------------------- */
+
+.contact-main {
+    grid-area: c-main;
+    background-color: var(--bg-grey);
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.contact-header {
+    padding: 5rem;
+}
+
+.contact-header {
+    color: white;
+}
+
+.contact-input {
+    flex-direction: column;
+    padding: 5.5rem 40% 5rem 0;
+}
+
+.contact-input input {
+    border-radius: 2px;
+    border: 0;
+    padding: 0.3rem;
+}
+
+.contact-input button {
+    align-self: flex-end;
+}
+
+.contact-input p {
+    color: white;
+    padding: 1.3rem 0 0.5rem 0; 
+}
+
+#text-area {
+    font-family: var(--ff-fira);
+    font-size: var(--fs-p);
+    padding: 0.3rem;
+    border: 0;
+    border-radius: 2px;
+}
+
+/* --------------------------------END MAIN SECTION--------------------------- */
+
+/* --------------------------- START DESTINATION SECTION------------------------ */
+
+.contact-destination {
+    grid-area: D-footer;
+    background-image: url(../img/map-contact.png);
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 25rem;
+}
+
+.destination-card {
+    justify-content: center;
+}
+
+.destination-card article {
+    background-color: var(--bg-yellow);
+    width: 68%;
+    margin: 2rem 0 11rem 0;
+    color: white;
+    padding: 1.2rem;
+}
+
+.destination-card article p {
+    color: white;
+    line-height: 1.4rem;
+}
+
+.contact-destination figure {
+    align-items: center;
+}
+
+.contact-destination figure img {
+    transform: translateX(-50%);
+    scale: 0.8;
+}
+/* --------------------------- END DESTINATION SECTION------------------------ */
+
+/* ----------------------------- START FOOTER SECTION------------------------- */
+
+.c-footer {
+    grid-area: c-footer;
+    background-color:var(--bg-dark-grey);
+    height: 300px;
+}
+
+/* ----------------------------- END FOOTER SECTION--------------------------- */
