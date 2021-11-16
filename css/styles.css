@@ -6,6 +6,8 @@
     --bg-yellow: #ffb939;
     --bg-red: #f17949;
     --bg-grey: #a9a19e;
+    --bg-ligth-grey:#EBEBEB;
+    --bg-dark-grey: #777574;
 
     --fs-s: 11px;
     --fs-nav:12px;
@@ -86,6 +88,7 @@ body {
     'navigation navigation navigation navigation navigation navigation'
     'main main main main main main'
     'instruktion instruktion instruktion instruktion instruktion instruktion'
+    'footer footer footer footer footer footer'
     ;
 }   
 
@@ -384,3 +387,35 @@ a {
     background-color: var(--bg-red);
 }
 
+
+/* --------------------------- END INSTRUCTIONS SECTION---------------------- */
+
+/* ----------------------------- START FOOTER SECTION------------------------ */
+
+.footer{
+    grid-area: footer;
+    background-color:var(--bg-dark-grey);
+    height: 340px;
+}
+.footer-thin{
+
+    flex-direction: column;
+    height: 68px;
+    background-color:var(--bg-grey);
+    justify-content: center;
+    align-items: center;   
+}
+
+.footer-thin img{
+    width: 100%;    
+}
+
+.footer-thin h2{
+    color: rgba(0, 0, 0, 0.7);
+    font-family: var(--ff-fira);
+    font-weight: var(--fw-s);
+    font-size: 1.2rem;
+    padding-bottom: 10px;
+}
+
+/* ----------------------------- END FOOTER SECTION------------------------ */
